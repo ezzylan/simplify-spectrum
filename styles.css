@@ -1,0 +1,72 @@
+/* MAIN PAGE STARTS */
+
+/* hide carousel & attention section */
+.theme-slider,
+.generalbox.sitetopic {
+	display: none;
+}
+
+/* add top padding to sidebar */
+#block-region-side-pre {
+	padding-top: 1rem;
+}
+
+/* make course name stand out */
+.coursename > a {
+	font-family: "Spectral", serif;
+	font-size: 1.5rem !important;
+}
+
+/* hide instructors' name by default */
+.teachers {
+	display: none;
+}
+
+/* show instuctors' names when hover on course */
+.summary:hover + .teachers {
+	display: block;
+}
+
+/* MAIN PAGE ENDS */
+
+/* COURSE PAGE STARTS */
+
+/* make course name stand out */
+div.page-header-headings > h1 {
+	font-size: 3rem;
+	font-family: "Spectral", serif;
+}
+
+/* make section heading stand out */
+li > div > h3 > span > a {
+	font-size: 2rem;
+	font-family: "Spectral", serif;
+	text-transform: uppercase;
+	color: #7dae6f;
+}
+li > div > h3 > span > a:hover {
+	color: #7dae6f;
+}
+
+/* style scroll to top button */
+#scroll-btn {
+	opacity: 0;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	background-color: #ff751a;
+	position: fixed;
+	bottom: 10%;
+	right: 10%;
+	border: 2px solid #77b1d7;
+	border-radius: 50%;
+	font: bold 2rem monospace;
+	transition: opacity 0.5s, transform 0.5s;
+	padding: 0;
+}
+#scroll-btn.show {
+	opacity: 1;
+	transition: opacity 1s, transform 1s;
+}
+
+/* COURSE PAGE ENDS */
